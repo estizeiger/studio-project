@@ -1,0 +1,23 @@
+.side-nav-container {
+    position: absolute;
+    top: 8rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e1eefd;
+    background-image: url("../../images/studio-logo.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* background-attachment: fixed; */
+    /* position: absolute; */
+    /* left: 200px */
+  }
+
+mat-sidenav {
+    width: 12%;
+}
+
+mat-sidenav-content{
+    width: 80%;
+    /* margin: auto; */
+}

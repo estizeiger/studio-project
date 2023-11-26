@@ -1,0 +1,14 @@
+<mat-accordion multi="true">
+  <mat-expansion-panel *ngFor="let item of coursesList" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title> {{ item.title }} class </mat-panel-title>
+      <mat-panel-description>
+        {{ item.shortDescription }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="{{ item.class }}">{{ item.summary }}</div>
+    <button mat-button color="primary" (click)="openDialog('{{item.class}}')">
+      I want to sign up
+    </button>
+  </mat-expansion-panel>
+</mat-accordion>

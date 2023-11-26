@@ -1,0 +1,49 @@
+<mat-sidenav-container class="side-nav-container">
+  <mat-sidenav mode="side" opened>
+    <mat-list role="list">
+      <mat-list-item role="listitem"
+        ><button mat-button color="accent" routerLink="/">
+          Home
+        </button></mat-list-item
+      >
+      <mat-list-item role="listitem"
+        ><button mat-button color="accent" routerLink="/courses">
+          Courses
+        </button></mat-list-item
+      >
+      <mat-list-item role="listitem"
+        ><button mat-button color="accent" routerLink="/scedule">
+          Scedule
+        </button></mat-list-item
+      >
+      <mat-list-item role="listitem"
+        ><button mat-button color="accent">Teachers</button></mat-list-item
+      >
+      <mat-list-item role="listitem"
+        ><button mat-button color="accent" routerLink="/students">
+          Students
+        </button></mat-list-item
+      >
+      <mat-list-item role="listitem"
+        ><button mat-button color="accent">Satisfaction</button></mat-list-item
+      >
+    </mat-list>
+
+    <!-- <mat-tree>
+      <mat-tree-node>
+        <button mat-button color="accent">Courses</button>
+      </mat-tree-node>
+      <mat-tree-node>
+        <button mat-button color="accent">Courses</button>
+      </mat-tree-node>
+      <mat-tree-node>
+        <button mat-button color="accent">Courses</button>
+      </mat-tree-node>
+    </mat-tree> -->
+
+    <!-- This is the tree node template for leaf nodes -->
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

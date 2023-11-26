@@ -1,0 +1,123 @@
+<h1 mat-dialog-title>Applyance</h1>
+<div mat-dialog-content>
+  apply to a course. if new here, we recommend you to first try the course, and
+  only than- apply to the course.
+  <mat-stepper orientation="horizontal" [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Lesson details</ng-template>
+        <mat-form-field color="accent">
+          <mat-label>Course Name</mat-label>
+          <mat-select formControlName="firstCtrl">
+            <mat-option>Ballet</mat-option>
+            <mat-option>Modern</mat-option>
+            <mat-option>Lyrical</mat-option>
+            <mat-option>Jazz</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field color="accent">
+          <mat-label>Teacher name</mat-label>
+          <mat-select formControlName="secondCtrl">
+            <mat-option>shula levi</mat-option>
+            <mat-option>sisy gur</mat-option>
+            <mat-option>yolanda shor</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field color="accent">
+          <mat-label>hour</mat-label>
+          <mat-select formControlName="thirdCtrl">
+            <mat-option>16:00</mat-option>
+            <mat-option>17:30</mat-option>
+            <mat-option>16:00</mat-option>
+            <mat-option>17:30</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Personal details</ng-template>
+        <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input
+            color="accent"
+            matInput
+            placeholder="First name"
+            formControlName="firstCtrl"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input
+            color="accent"
+            matInput
+            placeholder="Last name"
+            formControlName="secondCtrl"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Phone</mat-label>
+          <input color="accent" matInput formControlName="thirdCtrl" required />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            color="accent"
+            matInput
+            formControlName="forthCtrl"
+            placeholder="xxxxxx@example.xx"
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Address</mat-label>
+          <input
+            color="accent"
+            matInput
+            formControlName="fifthCtrl"
+            placeholder="Ex. 1 Main St, New York, NY"
+          />
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Birth Date</mat-label>
+          <input
+            type="date"
+            color="accent"
+            matInput
+            formControlName="sixthCtrl"
+          />
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Id</mat-label>
+          <input
+            type="number"
+            color="accent"
+            matInput
+            formControlName="seventhCtrl"
+          />
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+</div>
+<div mat-dialog-actions>
+  <button mat-stroked-button color="accent" mat-dialog-close>Close</button>
+</div>

@@ -1,0 +1,39 @@
+<form>
+  <mat-form-field color="accent">
+    <mat-label>student name</mat-label>
+    <mat-select>
+      <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{ food.viewValue }}
+            </mat-option> -->
+      <mat-option>sheli zur</mat-option>
+      <mat-option>ayelet chohen</mat-option>
+      <mat-option>sheli zur</mat-option>
+      <mat-option>ayelet chohen</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field color="accent">
+    <mat-label>course name</mat-label>
+    <mat-select>
+      <mat-option>Ballet</mat-option>
+      <mat-option>Modern</mat-option>
+      <mat-option>Lyrical</mat-option>
+      <mat-option>Jazz</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field color="accent">
+    <mat-label>hour</mat-label>
+    <mat-select>
+      <mat-option>16:00</mat-option>
+      <mat-option>17:30</mat-option>
+      <mat-option>16:00</mat-option>
+      <mat-option>17:30</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field color="accent">
+    <mat-label>date</mat-label>
+    <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" />
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</form>

@@ -19,6 +19,8 @@
     ]
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false
+    "enableI18nLegacyMessageIdFormat": false,
+    //i added (if not added, it says some note):
+    "strictTemplates": true,
   }
 }

@@ -1,0 +1,47 @@
+:host {
+    display: block;
+    margin-top: 2rem;
+}
+
+mat-accordion {
+    margin: auto;
+}
+
+mat-expansion-panel {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.ballet {
+    background-image: url("../../images/ballet.png");
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 200px;
+    position: relative;
+    margin-left: 500px;
+}
+.modern {
+    background-image: url("../../images/modern.jpg");
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 200px;
+    position: relative;
+    margin-left: 500px;
+}
+.lyrical {
+    background-image: url("../../images/lyrical.png");
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 200px;
+    position: relative;
+    margin-left: 500px;
+}
+.jazz {
+    background-image: url("../../images/jazz.jpg");
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 200px;
+    position: relative;
+    margin-left: 500px;
+}

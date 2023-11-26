@@ -1,0 +1,51 @@
+<mat-accordion multi="true">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Ballet class </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="ballet">hi</div>
+    <button mat-button color="primary" (click)="openDialog('Ballet')">
+      I want to sign up
+    </button>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel class="modern" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Modern class </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+    <button mat-button color="primary" (click)="openDialog('Modern')">
+      I want to sign up
+    </button>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel class="lyrical" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Lyrical class </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+    <!-- <button mat-button color="primary" (click)="openDialog('Lyrical')"> -->
+  </mat-expansion-panel>
+
+  <mat-expansion-panel class="Jazz" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Jazz class </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+    <button mat-button color="primary" (click)="openDialog('Jazz')">
+      I want to sign up
+    </button>
+  </mat-expansion-panel>
+</mat-accordion>
